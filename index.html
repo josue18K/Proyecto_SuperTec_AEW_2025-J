@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperTec - Inicio</title>
+    <!-- Enlazamos nuestro CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- CDN de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado con barra de navegación -->
+    <header>
+        <nav class="barra-navegacion">
+            <div class="logo">
+                <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <!-- Botón de modo oscuro integrado en la barra -->
+            <button id="darkModeToggle" aria-label="Modo Oscuro"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección Hero con Video de Fondo -->
+        <section id="inicio" class="hero">
+            <video autoplay muted loop id="bg-video">
+                <source src="ruta_al_video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="hero-contenido">
+                <h1>Bienvenido a SuperTec</h1>
+                <p>Soluciones tecnológicas innovadoras para empresas y hogares</p>
+                <a href="servicios.html" class="btn">Descubre nuestros servicios</a>
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section id="estadisticas" class="estadisticas">
+            <div class="estadisticas-container">
+                <div class="estadistica">
+                    <h3>10</h3>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="estadistica">
+                    <h3>200+</h3>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div class="estadistica">
+                    <h3>300+</h3>
+                    <p>Proyectos Completados</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Características -->
+        <section id="caracteristicas" class="caracteristicas">
+            <h2>¿Por qué elegir SuperTec?</h2>
+            <div class="caracteristicas-container">
+                <div class="caracteristica">
+                    <h3>Soporte 24/7</h3>
+                    <p>Atención personalizada en cualquier momento.</p>
+                </div>
+                <div class="caracteristica">
+                    <h3>Tecnología de Punta</h3>
+                    <p>Implementamos soluciones modernas y eficientes.</p>
+                </div>
+                <div class="caracteristica">
+                    <h3>Seguridad Garantizada</h3>
+                    <p>Protegemos tus activos digitales con los mejores estándares.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección CTA Adicional -->
+        <section id="cta-adicional" class="cta-adicional">
+            <h2>¿Listo para transformar tu negocio?</h2>
+            <p>Contáctanos hoy y obtén una consulta gratuita.</p>
+            <a href="contacto.html" class="btn">Contáctanos</a>
+        </section>
+
+        <!-- Sección FAQ -->
+        <section id="faq" class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué servicios ofrecen? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos soporte técnico, redes y seguridad, desarrollo de software y soluciones
+                            tecnológicas personalizadas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cómo solicito una consulta? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puedes contactarnos a través del formulario de contacto o llamarnos directamente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuánto tiempo llevan en el mercado? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Llevamos más de 10 años ofreciendo soluciones tecnológicas de calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Galería de Proyectos -->
+        <section id="galeria" class="galeria">
+            <h2>Nuestros Proyectos</h2>
+            <div class="galeria-container">
+                <div class="imagen-galeria">
+                    <img src="./img/inicio/proyecto 1.webp" alt="Proyecto 1">
+                    <p>Redes y Comunicaciones</p>
+                </div>
+                <div class="imagen-galeria">
+                    <img src="./img/inicio/proyecto 2.webp" alt="Proyecto 2">
+                    <p>Diseño de Páginas Web</p>
+                </div>
+                <div class="imagen-galeria">
+                    <img src="./img/inicio/proyecto 3.webp" alt="Proyecto 3">
+                    <p>Seguridad</p>
+                </div>
+                <div class="imagen-galeria">
+                    <img src="./img/inicio/proyecto 4.webp" alt="Proyecto 4">
+                    <p>Soporte Técnico</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Comentarios / Testimonios (Carrusel) -->
+        <section id="comentarios" class="comentarios">
+            <h2>Comentarios de Nuestros Clientes</h2>
+            <div class="comentarios-slider">
+                <div class="comentarios-container">
+                    <!-- Testimonios originales -->
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"El servicio de SuperTec superó todas mis expectativas. La atención personalizada ha
+                                transformado mi negocio."</p>
+                        </blockquote>
+                        <h4>- Laura Martínez</h4>
+                    </div>
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"Gracias a SuperTec, nuestra infraestructura se optimizó y protegió. Su soporte técnico
+                                es insuperable."</p>
+                        </blockquote>
+                        <h4>- Roberto Sánchez</h4>
+                    </div>
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"Recomiendo SuperTec a cualquier empresa que busque soluciones innovadoras en diseño web
+                                y seguridad."</p>
+                        </blockquote>
+                        <h4>- Ana Rodríguez</h4>
+                    </div>
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"La integración de sistemas y el soporte constante han sido fundamentales para el
+                                crecimiento de mi empresa."</p>
+                        </blockquote>
+                        <h4>- Carlos López</h4>
+                    </div>
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"El equipo de SuperTec es profesional y atento. Su experiencia en redes nos ha permitido
+                                alcanzar nuevos niveles."</p>
+                        </blockquote>
+                        <h4>- María García</h4>
+                    </div>
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"Desde que contratamos a SuperTec, nuestro sitio web ha mejorado significativamente en
+                                diseño y funcionalidad."</p>
+                        </blockquote>
+                        <h4>- Juan Pérez</h4>
+                    </div>
+                    <!-- Duplicado del primer testimonio para continuidad -->
+                    <div class="comentario">
+                        <blockquote>
+                            <p>"El servicio de SuperTec superó todas mis expectativas. La atención personalizada ha
+                                transformado mi negocio."</p>
+                        </blockquote>
+                        <h4>- Laura Martínez</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Partners (Nuestros Aliados) -->
+        <section id="partners" class="partners">
+            <h2>Nuestros Aliados</h2>
+            <div class="partners-container">
+                <div class="partner">
+                    <img src="./img/inicio/Cctv.webp" alt="Partner 1">
+                </div>
+                <div class="partner">
+                    <img src="./img/inicio/Cisco.webp" alt="Partner 2">
+                </div>
+                <div class="partner">
+                    <img src="./img/inicio/ct.webp" alt="Partner 3">
+                </div>
+                <div class="partner">
+                    <img src="./img/inicio/Microsoft.webp" alt="Partner 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Newsletter -->
+        <section id="newsletter" class="newsletter">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <p>Recibe las últimas novedades y ofertas exclusivas.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <div class="contacto-contenido">
+                <form class="formulario-contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+                <div class="info-contacto">
+                    <p><strong>Dirección:</strong> Calle Tecnológica 123, Ciudad Innovación</p>
+                    <p><strong>Teléfono:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> <a href="mailto:contacto@supertec.com">contacto@supertec.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+            </div>
+            <div class="footer-enlaces">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>Calle Tecnológica 123, Ciudad Innovación</p>
+                <p>Tel: +123 456 7890</p>
+                <p>Email: <a href="mailto:contacto@supertec.com">contacto@supertec.com</a></p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Suscríbete a Nuestro Boletín</h3>
+                <form class="footer-newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a>
+                | <a href="privacidad.html">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <!-- Botón "Volver al Inicio" -->
+    <a href="#inicio" id="backToTop" title="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Sin ningún <script> externo -->
+    <!-- (El JS no se cargará si no incluyes otro archivo o script inline) -->
+</body>
+
+</html>

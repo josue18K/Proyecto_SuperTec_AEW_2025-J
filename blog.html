@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperTec - Blog</title>
+  <!-- Enlazamos el CSS global -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- CDN de Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Encabezado / Barra de Navegación -->
+  <header>
+    <nav class="barra-navegacion">
+      <div class="logo">
+        <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+      </div>
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="redes-sociales">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+      <!-- Botón de Modo Oscuro -->
+      <button id="darkModeToggle" aria-label="Modo Oscuro">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Sección Hero para Blog -->
+  <section class="hero hero-blog">
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <h1>Bienvenido a Nuestro Blog</h1>
+      <p>Noticias, tendencias y consejos sobre tecnología e innovación</p>
+    </div>
+  </section>
+
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección: Últimas Publicaciones -->
+    <section class="blog-posts bg-white">
+      <div class="nosotros-texto-centered">
+        <h2>Últimas Publicaciones</h2>
+        <p>
+          Descubre las últimas novedades, consejos y casos de éxito en transformación digital e innovación tecnológica.
+        </p>
+      </div>
+      <div class="posts-container">
+        <!-- Post 1 -->
+        <article class="post">
+          <img src="./img/blog/post1.webp" alt="Transformación Digital">
+          <div class="post-content">
+            <h3>Transformación Digital en la Era Post-Pandemia</h3>
+            <p>
+              Explora cómo las empresas están adaptándose al nuevo escenario digital y transformando sus procesos para ser más eficientes y resilientes.
+            </p>
+            <a href="post1.html" class="btn">Leer más</a>
+          </div>
+        </article>
+        <!-- Post 2 -->
+        <article class="post">
+          <img src="./img/blog/post2.webp" alt="Innovación Tecnológica">
+          <div class="post-content">
+            <h3>Innovación Tecnológica: Tendencias y Retos</h3>
+            <p>
+              Analizamos las últimas tendencias en tecnología y cómo las soluciones innovadoras están redefiniendo el futuro empresarial.
+            </p>
+            <a href="post2.html" class="btn">Leer más</a>
+          </div>
+        </article>
+        <!-- Post 3 -->
+        <article class="post">
+          <img src="./img/blog/post3.webp" alt="Ciberseguridad en Empresas">
+          <div class="post-content">
+            <h3>Ciberseguridad: Protegiendo tu Negocio en la Era Digital</h3>
+            <p>
+              Descubre estrategias y mejores prácticas para mantener la seguridad de tus datos y proteger tu empresa frente a amenazas cibernéticas.
+            </p>
+            <a href="post3.html" class="btn">Leer más</a>
+          </div>
+        </article>
+        <!-- Post 4 -->
+        <article class="post">
+          <img src="./img/blog/post4.webp" alt="Soporte Técnico Eficiente">
+          <div class="post-content">
+            <h3>Soporte Técnico: Clave para la Continuidad Operativa</h3>
+            <p>
+              Conoce cómo un soporte técnico integral puede marcar la diferencia en la productividad y seguridad de tu organización.
+            </p>
+            <a href="post4.html" class="btn">Leer más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+      </div>
+      <div class="footer-enlaces">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p>Calle Tecnológica 123, Ciudad Innovación</p>
+        <p>Tel: +123 456 7890</p>
+        <p>Email: <a href="mailto:contacto@supertec.com">contacto@supertec.com</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Suscríbete a Nuestro Boletín</h3>
+        <form class="footer-newsletter-form" action="#" method="post">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+      <div class="footer-redes">
+        <h3>Síguenos</h3>
+        <div class="redes-sociales">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a href="privacidad.html">Política de Privacidad</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón "Volver al Inicio" -->
+  <a href="#top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</body>
+
+</html>
