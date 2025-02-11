@@ -7,13 +7,15 @@
   <title>SuperTec - Testimonios</title>
   <!-- Enlazamos el CSS global -->
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- CDN de Font Awesome para iconos -->
+  <!-- CDN de Font Awesome para iconos (si los necesitas para otros elementos) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
   <!-- Encabezado / Barra de Navegación -->
-  <header>
+  <header data-aos="fade-down">
     <nav class="barra-navegacion">
       <div class="logo">
         <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
@@ -23,9 +25,9 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="testimonios.html" class="active">Testimonios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="tienda.html" class="active">Tienda</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
@@ -39,7 +41,7 @@
   </header>
 
   <!-- Sección Hero para Testimonios -->
-  <section class="hero hero-testimonios">
+  <section class="hero hero-testimonios" data-aos="zoom-in">
     <div class="hero-overlay"></div>
     <div class="hero-contenido">
       <h1>Testimonios de Nuestros Clientes</h1>
@@ -50,66 +52,74 @@
   <!-- Contenido Principal -->
   <main>
     <!-- Sección: Testimonios -->
-    <section class="testimonios-principales bg-white">
+    <section class="testimonios-principales bg-white" data-aos="fade-up">
       <div class="nosotros-texto-centered">
         <h2>Lo Que Dicen Nuestros Clientes</h2>
         <p>
-          La satisfacción de nuestros clientes es la mejor prueba de nuestro trabajo. Descubre sus experiencias y cómo nuestras soluciones tecnológicas han transformado sus negocios.
+          La satisfacción de nuestros clientes es la mejor prueba de nuestro trabajo. Descubre sus experiencias y cómo
+          nuestras soluciones tecnológicas han transformado sus negocios.
         </p>
       </div>
       <div class="testimonios-slider">
         <div class="testimonios-container">
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up">
             <blockquote>
-              <p>"SuperTec transformó por completo nuestra infraestructura tecnológica. Su equipo es profesional y comprometido."</p>
+              <p>"SuperTec transformó por completo nuestra infraestructura tecnológica. Su equipo es profesional y
+                comprometido."</p>
             </blockquote>
             <h4>- Andrea R.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="100">
             <blockquote>
-              <p>"Gracias a SuperTec, nuestra empresa alcanzó nuevos niveles de eficiencia y seguridad. ¡Recomendados!"</p>
+              <p>"Gracias a SuperTec, nuestra empresa alcanzó nuevos niveles de eficiencia y seguridad. ¡Recomendados!"
+              </p>
             </blockquote>
             <h4>- Luis M.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="200">
             <blockquote>
-              <p>"La consultoría tecnológica que recibimos abrió nuevas oportunidades en el mercado digital para nosotros."</p>
+              <p>"La consultoría tecnológica que recibimos abrió nuevas oportunidades en el mercado digital para
+                nosotros."</p>
             </blockquote>
             <h4>- Carmen T.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="300">
             <blockquote>
-              <p>"El soporte técnico 24/7 de SuperTec ha sido vital para el crecimiento y la continuidad de nuestro negocio."</p>
+              <p>"El soporte técnico 24/7 de SuperTec ha sido vital para el crecimiento y la continuidad de nuestro
+                negocio."</p>
             </blockquote>
             <h4>- Mario F.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="400">
             <blockquote>
-              <p>"Su experiencia en desarrollo de software nos permitió optimizar nuestros procesos internos de manera significativa."</p>
+              <p>"La experiencia en desarrollo de software nos permitió optimizar nuestros procesos internos de manera
+                significativa."</p>
             </blockquote>
             <h4>- Patricia L.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="500">
             <blockquote>
               <p>"La implementación de soluciones en la nube ha revolucionado la forma en que operamos diariamente."</p>
             </blockquote>
             <h4>- Ricardo G.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="600">
             <blockquote>
               <p>"La atención personalizada y la calidad de sus servicios superaron todas nuestras expectativas."</p>
             </blockquote>
             <h4>- Sofía A.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="700">
             <blockquote>
-              <p>"Con SuperTec, cada proyecto se convierte en una experiencia de innovación y compromiso. ¡Excelente trabajo!"</p>
+              <p>"Con SuperTec, cada proyecto se convierte en una experiencia de innovación y compromiso. ¡Excelente
+                trabajo!"</p>
             </blockquote>
             <h4>- Gabriel H.</h4>
           </div>
-          <div class="comentario">
+          <div class="comentario" data-aos="fade-up" data-aos-delay="800">
             <blockquote>
-              <p>"Recomiendo ampliamente a SuperTec por su profesionalismo y capacidad de transformar ideas en soluciones tecnológicas efectivas."</p>
+              <p>"Recomiendo ampliamente a SuperTec por su profesionalismo y capacidad de transformar ideas en
+                soluciones tecnológicas efectivas."</p>
             </blockquote>
             <h4>- Valeria S.</h4>
           </div>
@@ -119,7 +129,7 @@
   </main>
 
   <!-- Pie de Página -->
-  <footer>
+  <footer data-aos="fade-up">
     <div class="footer-contenido">
       <div class="footer-logo">
         <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
@@ -160,16 +170,20 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>
-        &copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a href="privacidad.html">Política de Privacidad</a>
-      </p>
+      <p>&copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a
+          href="privacidad.html">Política de Privacidad</a></p>
     </div>
   </footer>
 
-  <!-- Botón "Volver al Inicio" -->
-  <a href="#top" id="backToTop" title="Volver arriba">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 
 </html>

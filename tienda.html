@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SuperTec - Tienda</title>
   <!-- Enlazamos el CSS global -->
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- CDN de Font Awesome para iconos -->
+  <!-- CDN de Font Awesome para iconos (si aún los usas en otros elementos) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
+
 <body>
   <!-- Encabezado / Barra de Navegación -->
-  <header>
+  <header data-aos="fade-down">
     <nav class="barra-navegacion">
       <div class="logo">
         <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
@@ -27,19 +31,20 @@
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
-      <div class="redes-sociales">
-        <a href="#" class="fab fa-facebook"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-youtube"></a>
-        <a href="#" class="fab fa-linkedin"></a>
+      <div class="redes-sociales" data-aos="fade-left">
+        <a href="#" class="fab fa-facebook" data-aos="fade-left" data-aos-delay="50"></a>
+        <a href="#" class="fab fa-instagram" data-aos="fade-left" data-aos-delay="100"></a>
+        <a href="#" class="fab fa-youtube" data-aos="fade-left" data-aos-delay="150"></a>
+        <a href="#" class="fab fa-linkedin" data-aos="fade-left" data-aos-delay="200"></a>
       </div>
+      <!-- Botón de modo oscuro eliminado -->
     </nav>
   </header>
 
   <!-- Sección Hero para Tienda -->
-  <section class="hero hero-tienda">
+  <section class="hero hero-tienda" data-aos="zoom-in">
     <div class="hero-overlay"></div>
-    <div class="hero-contenido">
+    <div class="hero-contenido" data-aos="fade-up">
       <h1>Catálogo de Productos</h1>
       <p>Encuentra el equipo tecnológico que necesitas</p>
     </div>
@@ -47,63 +52,63 @@
 
   <!-- Contenido Principal -->
   <main>
-    <section class="tienda bg-white">
-      <div class="nosotros-texto-centered">
+    <section class="tienda bg-white" data-aos="fade-up">
+      <div class="nosotros-texto-centered" data-aos="fade-up">
         <h2>Nuestros Productos</h2>
         <p>Explora nuestro catálogo y elige el equipo que mejor se adapte a tus necesidades.</p>
       </div>
-      <div class="productos-container">
+      <div class="productos-container" data-aos="fade-up">
         <!-- Producto 1: Laptops -->
-        <div class="producto">
+        <div class="producto" data-aos="zoom-in">
           <img src="./img/tienda/laptop.webp" alt="Laptops">
           <h3>Laptops</h3>
           <p>Equipos de alto rendimiento ideales para profesionales y estudiantes.</p>
           <span class="precio">S/2999</span>
-          <a href="#" class="btn">Comprar Ahora</a>
+          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="50">Comprar Ahora</a>
         </div>
         <!-- Producto 2: Accesorios de Cómputo -->
-        <div class="producto">
+        <div class="producto" data-aos="zoom-in" data-aos-delay="100">
           <img src="./img/tienda/accesorios.webp" alt="Accesorios de Cómputo">
           <h3>Accesorios de Cómputo</h3>
           <p>Periféricos y componentes para mejorar tu experiencia digital.</p>
           <span class="precio">S/399</span>
-          <a href="#" class="btn">Comprar Ahora</a>
+          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="150">Comprar Ahora</a>
         </div>
         <!-- Producto 3: Impresoras -->
-        <div class="producto">
+        <div class="producto" data-aos="zoom-in" data-aos-delay="200">
           <img src="./img/tienda/impresoras.webp" alt="Impresoras">
           <h3>Impresoras</h3>
           <p>Impresoras multifunción para oficinas y hogares con alta calidad de impresión.</p>
           <span class="precio">S/1499</span>
-          <a href="#" class="btn">Comprar Ahora</a>
+          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="250">Comprar Ahora</a>
         </div>
         <!-- Producto 4: Cámaras y Alarmas -->
-        <div class="producto">
+        <div class="producto" data-aos="zoom-in" data-aos-delay="300">
           <img src="./img/tienda/camaras.webp" alt="Cámaras y Alarmas">
           <h3>Cámaras y Alarmas</h3>
           <p>Sistemas de seguridad integrados para proteger tus activos.</p>
           <span class="precio">S/899</span>
-          <a href="#" class="btn">Comprar Ahora</a>
+          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="350">Comprar Ahora</a>
         </div>
         <!-- Producto 5: Licencias -->
-        <div class="producto">
+        <div class="producto" data-aos="zoom-in" data-aos-delay="400">
           <img src="./img/tienda/licencias.webp" alt="Licencias">
           <h3>Licencias</h3>
           <p>Software y herramientas oficiales para potenciar tu negocio.</p>
           <span class="precio">S/499</span>
-          <a href="#" class="btn">Comprar Ahora</a>
+          <a href="#" class="btn" data-aos="fade-up" data-aos-delay="450">Comprar Ahora</a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Pie de Página -->
-  <footer>
+  <footer data-aos="fade-up">
     <div class="footer-contenido">
-      <div class="footer-logo">
+      <div class="footer-logo" data-aos="zoom-in">
         <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
       </div>
-      <div class="footer-enlaces">
+      <div class="footer-enlaces" data-aos="fade-right">
         <h3>Enlaces Rápidos</h3>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -111,24 +116,24 @@
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="testimonios.html">Testimonios</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="tienda.html" class="active">Tienda</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
-      <div class="footer-contacto">
+      <div class="footer-contacto" data-aos="fade-up">
         <h3>Contacto</h3>
         <p>Calle Tecnológica 123, Ciudad Innovación</p>
         <p>Tel: +123 456 7890</p>
         <p>Email: <a href="mailto:contacto@supertec.com">contacto@supertec.com</a></p>
       </div>
-      <div class="footer-newsletter">
+      <div class="footer-newsletter" data-aos="fade-up">
         <h3>Suscríbete a Nuestro Boletín</h3>
         <form class="footer-newsletter-form" action="#" method="post">
           <input type="email" placeholder="Tu correo electrónico" required>
           <button type="submit">Suscribirme</button>
         </form>
       </div>
-      <div class="footer-redes">
+      <div class="footer-redes" data-aos="fade-left">
         <h3>Síguenos</h3>
         <div class="redes-sociales">
           <a href="#" class="fab fa-facebook"></a>
@@ -138,12 +143,20 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a href="privacidad.html">Política de Privacidad</a></p>
+    <div class="footer-bottom" data-aos="fade-up" data-aos-delay="100">
+      <p>&copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a
+          href="privacidad.html">Política de Privacidad</a></p>
     </div>
   </footer>
-
-  <!-- Botón "Volver al Inicio" -->
-  <a href="#inicio" id="backToTop" title="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
+
 </html>
