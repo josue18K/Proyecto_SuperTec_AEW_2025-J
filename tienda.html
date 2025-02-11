@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperTec - Tienda</title>
+  <!-- Enlazamos el CSS global -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- CDN de Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Encabezado / Barra de Navegación -->
+  <header>
+    <nav class="barra-navegacion">
+      <div class="logo">
+        <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+      </div>
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tienda.html" class="active">Tienda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="redes-sociales">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Hero para Tienda -->
+  <section class="hero hero-tienda">
+    <div class="hero-overlay"></div>
+    <div class="hero-contenido">
+      <h1>Catálogo de Productos</h1>
+      <p>Encuentra el equipo tecnológico que necesitas</p>
+    </div>
+  </section>
+
+  <!-- Contenido Principal -->
+  <main>
+    <section class="tienda bg-white">
+      <div class="nosotros-texto-centered">
+        <h2>Nuestros Productos</h2>
+        <p>Explora nuestro catálogo y elige el equipo que mejor se adapte a tus necesidades.</p>
+      </div>
+      <div class="productos-container">
+        <!-- Producto 1 -->
+        <div class="producto">
+          <img src="./img/tienda/producto1.webp" alt="Portátil Ultra Rápido">
+          <h3>Portátil Ultra Rápido</h3>
+          <p>Ideal para profesionales que requieren rendimiento y portabilidad.</p>
+          <span class="precio">$999</span>
+          <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto">
+          <img src="./img/tienda/producto2.webp" alt="Smartphone Avanzado">
+          <h3>Smartphone Avanzado</h3>
+          <p>Tecnología de punta en un diseño elegante y funcional.</p>
+          <span class="precio">$799</span>
+          <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto">
+          <img src="./img/tienda/producto3.webp" alt="Tablet Versátil">
+          <h3>Tablet Versátil</h3>
+          <p>La herramienta perfecta para trabajar y entretenerte en cualquier lugar.</p>
+          <span class="precio">$499</span>
+          <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+        <!-- Producto 4 -->
+        <div class="producto">
+          <img src="./img/tienda/producto4.webp" alt="Accesorios Tecnológicos">
+          <h3>Accesorios Tecnológicos</h3>
+          <p>Cubre todas tus necesidades con nuestra línea de accesorios.</p>
+          <span class="precio">$199</span>
+          <a href="#" class="btn">Comprar Ahora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer>
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <a href="index.html"><img src="./img/inicio/Logo.webp" alt="SuperTec"></a>
+      </div>
+      <div class="footer-enlaces">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tienda.html" class="active">Tienda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p>Calle Tecnológica 123, Ciudad Innovación</p>
+        <p>Tel: +123 456 7890</p>
+        <p>Email: <a href="mailto:contacto@supertec.com">contacto@supertec.com</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Suscríbete a Nuestro Boletín</h3>
+        <form class="footer-newsletter-form" action="#" method="post">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+      <div class="footer-redes">
+        <h3>Síguenos</h3>
+        <div class="redes-sociales">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SuperTec. Todos los derechos reservados. | <a href="terminos.html">Términos y Condiciones</a> | <a href="privacidad.html">Política de Privacidad</a></p>
+    </div>
+  </footer>
+
+  <!-- Botón "Volver al Inicio" -->
+  <a href="#inicio" id="backToTop" title="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
