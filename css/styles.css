@@ -19,8 +19,7 @@ html {
 /* Tipografía general en Poppins */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e3f2fd;
-  /* Fondo azul muy claro */
+  background-color: #e3f2fd; /* Fondo azul muy claro */
   color: #212121;
   line-height: 1.6;
   text-align: center;
@@ -71,27 +70,9 @@ a {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
-}
-
-/* =======================================
-   Botón "Volver al Inicio"
-========================================== */
-#backToTop {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: #0D47A1;
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 20px;
-  display: none;
-  z-index: 1500;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #backToTop:hover {
@@ -161,18 +142,23 @@ a {
   color: #212121;
 }
 
+/* Redes Sociales */
+/* Regla general (se mantiene para compatibilidad) */
 .redes-sociales {
   display: flex;
   gap: 15px;
 }
 
-.redes-sociales a {
+/* Mayor especificidad para Header y Footer */
+header .redes-sociales a,
+footer .redes-sociales a {
   color: #fff;
   font-size: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
-.redes-sociales a:hover {
+header .redes-sociales a:hover,
+footer .redes-sociales a:hover {
   transform: scale(1.2);
 }
 
@@ -187,31 +173,25 @@ a {
   transition: background-color 0.3s ease;
 }
 
-#darkModeToggle:hover {
-  background-color: #1565C0;
-}
-
 /* =======================================
-   Hero (Index y otros)
+   Hero (Index y otros) con Video de Fondo
 ========================================== */
 .hero {
   position: relative;
   overflow: hidden;
-  height: 80vh;
-  background: #000;
+  height: 80vh; /* Establece aquí la altura consistente para todas las páginas */
+  background: #000;         /* Fondo negro mientras se carga el video */
 }
 
 #bg-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  z-index: -1;
+  z-index: -1;             /* Se sitúa detrás del contenido */
 }
 
 .hero-contenido {
@@ -238,7 +218,6 @@ a {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -479,43 +458,33 @@ a {
   0% {
     transform: translateX(0);
   }
-
   16% {
     transform: translateX(0);
   }
-
   20% {
     transform: translateX(-320px);
   }
-
   36% {
     transform: translateX(-320px);
   }
-
   40% {
     transform: translateX(-640px);
   }
-
   56% {
     transform: translateX(-640px);
   }
-
   60% {
     transform: translateX(-960px);
   }
-
   76% {
     transform: translateX(-960px);
   }
-
   80% {
     transform: translateX(-1280px);
   }
-
   96% {
     transform: translateX(-1280px);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -525,17 +494,22 @@ a {
   flex: 0 0 320px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: left;
   font-size: 16px;
   line-height: 1.5;
+  transition: transform 0.3s ease;
+}
+
+.comentario:hover {
+  transform: translateY(-5px);
 }
 
 .comentario blockquote {
   font-style: italic;
   font-size: 18px;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   border-left: 4px solid #0D47A1;
   padding-left: 10px;
 }
@@ -543,7 +517,6 @@ a {
 .comentario h4 {
   font-size: 16px;
   color: #555;
-  margin: 0;
   text-align: right;
 }
 
@@ -631,7 +604,7 @@ a {
 }
 
 /* =======================================
-   Sección Contacto
+   Sección Contacto (General)
 ========================================== */
 .contacto {
   padding: 50px;
@@ -704,7 +677,7 @@ footer {
   padding: 20px;
 }
 
-.footer-contenido>div {
+.footer-contenido > div {
   flex: 1;
   min-width: 200px;
   text-align: left;
@@ -802,11 +775,9 @@ footer {
   .hero h1 {
     font-size: 42px;
   }
-
   .hero p {
     font-size: 18px;
   }
-
   .menu a {
     font-size: 17px;
   }
@@ -817,24 +788,20 @@ footer {
     flex-direction: column;
     padding: 10px;
   }
-
   .menu {
     flex-direction: column;
     gap: 10px;
   }
-
   /* Para vistas como "Nosotros" o "Contacto", se centra el texto */
   .nosotros,
   .contacto-contenido {
     flex-direction: column;
     text-align: center;
   }
-
   .nosotros-texto,
   .info-contacto {
     text-align: center;
   }
-
   .servicios-container {
     flex-direction: column;
   }
@@ -844,18 +811,15 @@ footer {
   .hero h1 {
     font-size: 36px;
   }
-
   .hero p,
   .menu a {
     font-size: 16px;
     padding: 8px 12px;
   }
-
   .cta h2,
   .newsletter h2 {
     font-size: 28px;
   }
-
   .cta p,
   .newsletter p {
     font-size: 16px;
@@ -1005,7 +969,6 @@ footer {
    Estilos Específicos para servicios.html
 ========================================== */
 
-/* Hero para Servicios */
 .hero-servicios {
   background: url('./img/servicios/servicios-hero.webp') no-repeat center center/cover;
   height: 60vh;
@@ -1180,52 +1143,6 @@ footer {
   animation: slideTestimonials 50s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
-@keyframes slideTestimonials {
-  0% {
-    transform: translateX(0);
-  }
-
-  16% {
-    transform: translateX(0);
-  }
-
-  20% {
-    transform: translateX(-320px);
-  }
-
-  36% {
-    transform: translateX(-320px);
-  }
-
-  40% {
-    transform: translateX(-640px);
-  }
-
-  56% {
-    transform: translateX(-640px);
-  }
-
-  60% {
-    transform: translateX(-960px);
-  }
-
-  76% {
-    transform: translateX(-960px);
-  }
-
-  80% {
-    transform: translateX(-1280px);
-  }
-
-  96% {
-    transform: translateX(-1280px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .comentario {
   background: #fff;
   border-radius: 10px;
@@ -1233,6 +1150,11 @@ footer {
   padding: 20px;
   text-align: left;
   flex: 0 0 320px;
+  transition: transform 0.3s ease;
+}
+
+.comentario:hover {
+  transform: translateY(-5px);
 }
 
 .comentario blockquote {
@@ -1247,20 +1169,6 @@ footer {
   font-size: 16px;
   color: #555;
   text-align: right;
-}
-
-/* Ajustes Responsivos para la Página de Servicios */
-@media (max-width: 768px) {
-
-  .servicios-container,
-  .casos-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonios-container {
-    flex-direction: column;
-  }
 }
 
 /* =======================================
@@ -1323,52 +1231,6 @@ footer {
   animation: slideTestimonials 50s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
-@keyframes slideTestimonials {
-  0% {
-    transform: translateX(0);
-  }
-
-  16% {
-    transform: translateX(0);
-  }
-
-  20% {
-    transform: translateX(-320px);
-  }
-
-  36% {
-    transform: translateX(-320px);
-  }
-
-  40% {
-    transform: translateX(-640px);
-  }
-
-  56% {
-    transform: translateX(-640px);
-  }
-
-  60% {
-    transform: translateX(-960px);
-  }
-
-  76% {
-    transform: translateX(-960px);
-  }
-
-  80% {
-    transform: translateX(-1280px);
-  }
-
-  96% {
-    transform: translateX(-1280px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 /* Estilos para cada Testimonio */
 .comentario {
   background: #fff;
@@ -1396,14 +1258,6 @@ footer {
   font-size: 16px;
   color: #555;
   text-align: right;
-}
-
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-  .testimonios-container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* =======================================
@@ -1515,7 +1369,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* Ajustes Responsivos */
+/* Ajustes Responsivos para Blog */
 @media (max-width: 768px) {
   .posts-container {
     flex-direction: column;
@@ -1692,19 +1546,10 @@ footer {
   border-radius: 10px;
 }
 
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-  .contacto-detalles {
-    flex-direction: column;
-    align-items: center;
-  }
+/* =======================================
+   Estilos para tienda.html
+========================================== */
 
-  .formulario-contenedor {
-    padding: 10px;
-  }
-}
-
-/* Hero para Tienda */
 .hero-tienda {
   background: url('./img/tienda/tienda-hero.webp') no-repeat center center/cover;
   height: 60vh;
@@ -1729,7 +1574,6 @@ footer {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Sección Tienda */
 .tienda {
   padding: 50px 20px;
 }
@@ -1747,7 +1591,6 @@ footer {
   margin: 0 auto 30px;
 }
 
-/* Contenedor de Productos */
 .productos-container {
   display: flex;
   flex-wrap: wrap;
@@ -1755,7 +1598,6 @@ footer {
   gap: 30px;
 }
 
-/* Tarjeta de Producto */
 .producto {
   background: #fff;
   border-radius: 10px;
